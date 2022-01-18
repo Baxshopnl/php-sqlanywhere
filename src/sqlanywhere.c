@@ -2691,7 +2691,13 @@ PHP_FUNCTION(sasql_fetch_field)
 	RETURN_FALSE;
     }
 
+#if (PHP_MAJOR_VERSION < 8)
+    if( object_init( return_value ) == FAILURE ) {
+	RETURN_FALSE;
+    }
+#else
     object_init( return_value );
+#endif
 
 #if PHP_MAJOR_VERSION >= 7
     #define sqlany_add_property_string_dup(__arg, __key, __str) \
