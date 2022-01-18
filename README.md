@@ -1,6 +1,8 @@
 # PHP Sqlanywhere extension
 
-[Source code](https://wiki.scn.sap.com/wiki/display/SQLANY/The+SAP+SQL+Anywhere+PHP+Module)
+This repository adds PHP 8 support to the Sqlanywhere PHP extension.
+
+[Source](https://wiki.scn.sap.com/wiki/display/SQLANY/The+SAP+SQL+Anywhere+PHP+Module)
 
 # How to compile
 
